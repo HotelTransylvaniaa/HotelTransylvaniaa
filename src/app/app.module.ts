@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopDestinationComponent } from './components/Home/top-destination/top-destination.component';
 import { TopDestinationListComponent } from './components/Home/top-destination-list/top-destination-list.component';
+import { TopHotelComponent } from './components/Home/top-hotel/top-hotel.component';
+import { TopHotelItemComponent } from './components/Home/top-hotel-item/top-hotel-item.component';
 
 
 
@@ -13,6 +15,8 @@ import { TopDestinationListComponent } from './components/Home/top-destination-l
     AppComponent,
     TopDestinationComponent,
     TopDestinationListComponent,
+    TopHotelComponent,
+    TopHotelItemComponent,
   ],
   imports: [
     BrowserModule,
