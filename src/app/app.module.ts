@@ -7,6 +7,7 @@ import { TopDestinationComponent } from './components/Home/top-destination/top-d
 import { TopDestinationListComponent } from './components/Home/top-destination-list/top-destination-list.component';
 import { TopHotelComponent } from './components/Home/top-hotel/top-hotel.component';
 import { TopHotelItemComponent } from './components/Home/top-hotel-item/top-hotel-item.component';
+import { SearchBoxComponent } from './search-box/search-box.component';
 
 
 
@@ -17,6 +18,7 @@ import { TopHotelItemComponent } from './components/Home/top-hotel-item/top-hote
     TopDestinationListComponent,
     TopHotelComponent,
     TopHotelItemComponent,
+    SearchBoxComponent,
   ],
   imports: [
     BrowserModule,
