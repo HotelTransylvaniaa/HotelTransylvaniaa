@@ -1,54 +1,26 @@
 <div class="header">
   <div class="photo"></div>
   <div class="container">
-    <input type="text" placeholder="Enter a destination or property">
+    <input type="text" placeholder="  Enter a destination or property">
     <div class="row my-3">
       <div class="col-sm-3">
         <div class="form-group">
-          <input class="form-control" placeholder="Datepicker" bsDatepicker [minDate]="minDate" [maxDate]="maxDate"
+          <input class="form-control" placeholder="8 May 2022" bsDatepicker [minDate]="minDate" [maxDate]="maxDate"
             #dp="bsDatepicker">
         </div>
       </div>
       <div class="col-sm-3">
         <div class="form-group">
-          <input class="form-control" placeholder="Datepicker" bsDatepicker [minDate]="minDate" [maxDate]="maxDate"
+          <input class="form-control" placeholder="9 May 2022" bsDatepicker [minDate]="minDate" [maxDate]="maxDate"
             #dp="bsDatepicker">
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="btn-group" dropdown container="body">
-          <button dropdownToggle type="button" class="btn btn-light dropdown-toggle">
-            2 adults <span class="caret"></span>
-          </button>
-          <ul *dropdownMenu class="dropdown-menu" role="menu">
-            <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Action</a></li>
-         
-            <li role="menuitem" dropdown triggers="mouseover" placement="right" container="body">
-              <a dropdownToggle class="dropdown-item dropdown-toggle"
-                 (click)="false">Hover me for nested dropdown <span class="caret"></span></a>
-              <ul *dropdownMenu class="dropdown-menu" role="menu">
-                <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Action</a></li>
-                <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Action1</a></li>
-                <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Action2</a></li>
-              </ul>
-            </li>
-         
-            <li role="menuitem" dropdown triggers="mouseover" placement="right" container="body">
-              <a dropdownToggle class="dropdown-item dropdown-toggle"
-                 (click)="false">Hover me for nested dropdown <span class="caret"></span></a>
-              <ul *dropdownMenu class="dropdown-menu" role="menu">
-                <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Action</a></li>
-                <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Action1</a></li>
-                <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Action2</a></li>
-              </ul>
-            </li>
-         
-            <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Something else here</a></li>
-            <li class="divider dropdown-divider"></li>
-            <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Separated link</a></li>
-          </ul>
-        </div>
+        <ng-select class="box" [(ngModel)]="selectedOption">
+          <ng-option *ngFor="let option of options" [value]="option.id">{{option.name}}</ng-option>
+       </ng-select>
       </div>
     </div>
   </div>
+  <button class="btn btn-primary SEARCH">SEARCH</button>
 </div>
