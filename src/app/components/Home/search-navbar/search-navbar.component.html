@@ -1,0 +1,15 @@
+<div class="search-navbar">
+    <div class="container">
+        <div class="content">
+            <input type="text" class="searchInput" placeholder="Enter a destination or property">
+            <input class="searchDate" placeholder="8 May 2022" bsDatepicker [minDate]="minDate" [maxDate]="maxDate"
+                #dp="bsDatepicker">
+            <input class="searchDate" placeholder="9 May 2022" bsDatepicker [minDate]="minDate" [maxDate]="maxDate"
+                #dp="bsDatepicker">
+                <ng-select class="box" [(ngModel)]="selectedOption">
+                    <ng-option *ngFor="let option of options" [value]="option.id">{{option.name}}</ng-option>
+                 </ng-select>
+            <button class="btn btn-primary SEARCH">SEARCH</button>
+        </div>
+    </div>
+</div>

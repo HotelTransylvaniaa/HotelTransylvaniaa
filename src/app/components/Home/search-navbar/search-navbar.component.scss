@@ -1,0 +1,30 @@
+.search-navbar{
+    background-color: rgb(2, 2, 66);
+}
+.container{
+    padding: .7rem;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    .btn{
+        padding: 0 3rem;
+    }
+}
+.searchInput{
+    width: 25%;
+    padding: 0rem 1.5rem;
+    border-radius: 8px;
+    margin-right: .3rem;
+    text-align: left;
+}
+.searchDate{
+    width: 15%;
+    padding: 0rem 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+}
+.box{
+    width: 15%;
+    margin: 0 .5rem;
+}

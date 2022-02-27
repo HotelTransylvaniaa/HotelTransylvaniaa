@@ -1,2 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+.ng-select.box{
+    z-index: 99;
+
+}
+.ng-select.box .ng-select-container  {            
+    min-height: 4rem;
+    border-radius: 8px;
+    z-index: 99;
+}
