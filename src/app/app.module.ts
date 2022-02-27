@@ -5,23 +5,24 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { FormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopDestinationComponent } from './components/Home/top-destination/top-destination.component';
 import { TopDestinationListComponent } from './components/Home/top-destination-list/top-destination-list.component';
 import { TopHotelComponent } from './components/Home/top-hotel/top-hotel.component';
 import { TopHotelItemComponent } from './components/Home/top-hotel-item/top-hotel-item.component';
-<<<<<<< HEAD
 import { MainNavComponent } from './components/Navbar/main-nav/main-nav.component';
 import { NavSignComponent } from './components/Navbar/nav-sign/nav-sign.component';
 import { NavAccountComponent } from './components/Navbar/nav-account/nav-account.component';
 import { HomePageComponent } from './components/Home/home-page/home-page.component';
-=======
 import { SearchBoxComponent } from './components/Home/search-box/search-box.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchNavbarComponent } from './components/Home/search-navbar/search-navbar.component';
->>>>>>> 1bbfab757c3e45744e307eae253f613925e59b1c
+import { HotelsCardComponent } from './components/Hotels-search/hotels-card/hotels-card.component';
+import { HotelsBadgeCardComponent } from './components/Hotels-search/hotels-badge-card/hotels-badge-card.component';
+import { HotelsCardListComponent } from './components/Hotels-search/hotels-card-list/hotels-card-list.component';
+import { HotelPageComponent } from './components/Hotels-search/hotel-page/hotel-page.component';
+
 
 
 
@@ -32,16 +33,18 @@ import { SearchNavbarComponent } from './components/Home/search-navbar/search-na
     TopDestinationListComponent,
     TopHotelComponent,
     TopHotelItemComponent,
-<<<<<<< HEAD
     MainNavComponent,
     NavSignComponent,
     NavAccountComponent,
     HomePageComponent,
-=======
     SearchBoxComponent,
     SearchNavbarComponent,
-    
->>>>>>> 1bbfab757c3e45744e307eae253f613925e59b1c
+    HotelsCardComponent,
+    HotelsBadgeCardComponent,
+    HotelsCardListComponent,
+    HotelPageComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,7 @@ import { SearchNavbarComponent } from './components/Home/search-navbar/search-na
     BsDropdownModule.forRoot(),
     NgSelectModule,
     NgSelectModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

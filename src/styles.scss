@@ -9,11 +9,14 @@
 
 @import "~@ng-select/ng-select/themes/default.theme.css";
 
+@import "@fortawesome/fontawesome-free/CSS/all.min.css";
+
+
 .ng-select.box{
     z-index: 99;
 
 }
-.ng-select.box .ng-select-container  {            
+.ng-select.box .ng-select-container  {
     min-height: 4rem;
     border-radius: 8px;
     z-index: 99;
