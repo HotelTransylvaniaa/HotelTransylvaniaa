@@ -9,8 +9,12 @@
 
 @import "~@ng-select/ng-select/themes/default.theme.css";
 
+.ng-select.box{
+    z-index: 99;
 
+}
 .ng-select.box .ng-select-container  {            
-    min-height: 4.5rem;
+    min-height: 4rem;
     border-radius: 8px;
+    z-index: 99;
 }

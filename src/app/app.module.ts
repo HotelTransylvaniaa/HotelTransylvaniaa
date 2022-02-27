@@ -14,6 +14,7 @@ import { TopHotelComponent } from './components/Home/top-hotel/top-hotel.compone
 import { TopHotelItemComponent } from './components/Home/top-hotel-item/top-hotel-item.component';
 import { SearchBoxComponent } from './components/Home/search-box/search-box.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchNavbarComponent } from './components/Home/search-navbar/search-navbar.component';
 
 
 
@@ -25,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TopHotelComponent,
     TopHotelItemComponent,
     SearchBoxComponent,
+    SearchNavbarComponent,
     
   ],
   imports: [
