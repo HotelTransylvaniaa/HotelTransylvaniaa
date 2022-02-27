@@ -16,8 +16,15 @@
     z-index: 99;
 
 }
+
 .ng-select.box .ng-select-container  {
     min-height: 4rem;
+}
+.ng-select.box .ng-select-container  {
+    min-height: 4.5rem;
     border-radius: 8px;
+    z-index: 99;
+}
+.ng-option .ng-select.box {
     z-index: 99;
 }
