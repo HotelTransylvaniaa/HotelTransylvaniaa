@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-search-navbar',
@@ -14,6 +14,19 @@ export class SearchNavbarComponent implements OnInit {
     this.minDate.setDate(this.minDate.getDate() - 1);
     this.maxDate.setDate(this.maxDate.getDate() + 7);
   }
+
+  @HostListener('window:scroll',['$event']) getScrollHeight(){
+    const scrollTop = document.getElementById('scrollTop');
+    if (window.pageYOffset>650){
+    if(scrollTop){
+      scrollTop.style.display = 'block';
+    }
+  }else{
+    if(scrollTop){
+      scrollTop.style.display = 'none';
+    }
+  }
+}
 
   selectedOption: number = 1 ;
 

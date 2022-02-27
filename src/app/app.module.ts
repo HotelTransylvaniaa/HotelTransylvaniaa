@@ -24,8 +24,6 @@ import { HotelsCardListComponent } from './components/Hotels-search/hotels-card-
 import { HotelPageComponent } from './components/Hotels-search/hotel-page/hotel-page.component';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +41,8 @@ import { HotelPageComponent } from './components/Hotels-search/hotel-page/hotel-
     HotelsBadgeCardComponent,
     HotelsCardListComponent,
     HotelPageComponent,
-
+    SearchBoxComponent,
+    SearchNavbarComponent,
 
   ],
   imports: [
