@@ -1,0 +1,42 @@
+.alpha-name{
+  .alpha{
+    background-color: rgb(83, 146, 249);
+    width: 30px;
+    height: 30px;
+  }
+}
+.dropdown{
+  button{
+
+    .currency-img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+  ul{
+    width: 250px;
+    li{
+      background-color: white;
+      a{
+        color: black;
+        display: inline-block;
+      }
+    }
+    li:last-of-type{
+      a{
+        color: rgb(83, 146, 249);
+      }
+    }
+    li:last-of-type:hover{
+      a{
+        background-color: rgb(83, 146, 249);
+        color: white;
+      }
+    }
+    li:hover{
+      a{
+        color: rgb(83, 146, 249);
+      }
+    }
+  }
+}
